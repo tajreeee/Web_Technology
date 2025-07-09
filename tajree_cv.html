@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tajree - Stylish CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-bg: #f9fbfc;
+      --accent: #1d3557;
+      --light-accent: #a8dadc;
+      --highlight: #457b9d;
+      --text-dark: #1b1b1b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text-dark);
+      padding: 40px 20px;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    .cv-wrapper {
+      display: grid;
+      max-width: 1000px;
+      margin: auto;
+      grid-template-columns: 300px auto;
+      background: white;
+      box-shadow: 0 0 30px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      background: var(--accent);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .sidebar img {
+      width: 140px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 20px;
+    }
+
+    .sidebar h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      letter-spacing: 0.5px;
+    }
+
+    .sidebar p {
+      font-size: 14px;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    .sidebar .contact-info {
+      text-align: left;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    .sidebar .contact-info p {
+      margin: 8px 0;
+      font-weight: 500;
+    }
+
+    .main {
+      padding: 40px 30px;
+    }
+
+    .section {
+      margin-bottom: 35px;
+    }
+
+    .section h3 {
+      font-size: 22px;
+      color: var(--highlight);
+      font-weight: 700;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .section ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .section ul li {
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .skills span {
+      background: var(--light-accent);
+      color: #003049;
+      padding: 8px 15px;
+      border-radius: 25px;
+      margin: 5px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    a {
+      color: #f1faee;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media(max-width: 768px) {
+      .cv-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-wrapper">
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <img src="tajree.jpeg" alt="Tajree Photo">
+      <h2>Jannatul Ferdous Tajree</h2>
+      <p>3rd Year Software Engineering Student</p>
+      <p>Shahjalal University of Science and Technology</p>
+
+      <div class="contact-info">
+        <p>📧 <a href="mailto:jannatultajree02@gmail.com">jannatultajree02@gmail.com</a></p>
+        <p>📱 01742072496</p>
+        <p>💻 <a href="https://github.com/tajreeee" target="_blank">github.com/tajreeee</a></p>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+      <div class="section">
+        <h3>Education</h3>
+        <ul>
+          <li><strong>BSc in Software Engineering</strong> — Shahjalal University of Science and Technology (2023–Present)</li>
+          <li><strong>HSC</strong> — MC College, Sylhet — GPA: 5.00 (2021)</li>
+          <li><strong>SSC</strong> — Govt. Agragami Girls High School & College — GPA: 5.00 (2019)</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Technical Skills</h3>
+        <div class="skills">
+          <span>C</span>
+          <span>C++</span>
+          <span>Java</span>
+          <span>Dart</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>DSA</span>
+          <span>OOP</span>
+        </div>
+        <p style="margin-top: 10px;">
+          ➤ Strong foundation in <strong>Data Structures & Algorithms</strong> with 750+ solved problems on platforms like Codeforces, LightOJ, HackerRank, etc.  
+          <br>
+          ➤ Solid grasp of <strong>Object-Oriented Programming (OOP)</strong> principles and real-world application in multiple projects.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Projects</h3>
+        <ul>
+          <li>
+            <strong>🕹️ Snake Game (SDL):</strong>  
+            Developed a classic Snake game using C++ and the SDL graphics library. The game includes smooth movement, collision handling, increasing speed, and a dynamic scoring system.
+          </li>
+          <li>
+            <strong>🦠 Virus Vanguard (Java):</strong>  
+            Created a turn-based strategy game in Java as part of a team. Used object-oriented design with JavaFX for interactive UI. Handled logic for enemy AI, power-ups, and player turns.
+          </li>
+          <li>
+            <strong>📱 Study Abroad Guidance App (Flutter):</strong>  
+            Built a full-fledged Android app to guide Bangladeshi students aiming for higher studies in the USA. The app provides verified university info, scholarships, visa guidance, a deadline calendar, and a supportive community feature using Firebase.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Fluent in English (spoken & written)</li>
+          <li>Excellent public speaking & communication</li>
+          <li>Responsible, quick learner, and a dedicated team player</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
